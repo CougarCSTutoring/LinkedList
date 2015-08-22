@@ -9,7 +9,7 @@ private:
 public:
 	Node();
 	Node(std::string newData);
-	Node(std::string newData, Node* newNext);
+
 	~Node();
 	std::string getData();
 	void setData(std::string newData);

@@ -12,13 +12,6 @@ Node::Node(std::string newData)
 	next = NULL;
 }
 
-Node::Node(std::string newData, Node * newNext)
-{
-	data = newData;
-	next = newNext;
-}
-
-
 Node::~Node()
 {
 }
