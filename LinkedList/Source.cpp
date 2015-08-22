@@ -13,6 +13,7 @@ int main(int argc, char** argv) {
 	std::cout << "helloNode.data = " << helloNode->getData() << std::endl;
 	std::cout << "worldNode.data = " << worldNode->getData() << std::endl;
 	std::cout << "notFound pointer = " << notFound << std::endl;
+	std::cout << "list.size = " << list.getSize() << std::endl;
 
 	std::cin.get();
 }
