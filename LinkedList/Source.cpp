@@ -1,14 +1,18 @@
 #include <iostream>
-#include "Node.h"
+#include "LinkedList.h"
 
 int main(int argc, char** argv) {
-	Node* helloNode = new Node("Hello");
-	Node* worldNode = new Node("World");
+	LinkedList list;
+	list.addData("Hello");
+	list.addData("World");
 
-	helloNode->setNext(worldNode);
+	Node* helloNode = list.findData("Hello");
+	Node* worldNode = list.findData("World");
+	Node* notFound = list.findData("not found");
 
 	std::cout << "helloNode.data = " << helloNode->getData() << std::endl;
-	std::cout << "worldNode.data = " << helloNode->getNext()->getData() << std::endl;
+	std::cout << "worldNode.data = " << worldNode->getData() << std::endl;
+	std::cout << "notFound pointer = " << notFound << std::endl;
 
 	std::cin.get();
 }
