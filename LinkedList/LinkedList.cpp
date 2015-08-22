@@ -1,13 +1,11 @@
 #include "LinkedList.h"
 
-
-
 LinkedList::LinkedList()
 {
 	head = NULL;
 	tail = NULL;
+	size = 0;
 }
-
 
 LinkedList::~LinkedList()
 {
@@ -37,9 +35,14 @@ void LinkedList::addData(std::string data)
 	if (tail) {
 		Node* newNode = new Node(data);
 		tail->setNext(newNode);
-	}
-	else {
+	} else {
 		head = new Node(data);
 		tail = head;
 	}
+	size++;
+}
+
+int LinkedList::getSize()
+{
+	return size;
 }

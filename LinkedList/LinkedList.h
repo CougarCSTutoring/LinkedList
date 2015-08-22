@@ -8,6 +8,7 @@ class LinkedList
 private:
 	Node* head;
 	Node* tail;
+	int size;
 
 public:
 	LinkedList();
@@ -15,7 +16,7 @@ public:
 
 	Node* findData(std::string data);
 	void addData(std::string data);
-
+	int getSize();
 };
 
 #endif
