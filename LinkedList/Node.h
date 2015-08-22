@@ -11,8 +11,10 @@ public:
 	Node(std::string newData);
 
 	~Node();
+
 	std::string getData();
 	void setData(std::string newData);
+
 	Node* getNext();
 	void setNext(Node* newNext);
 };
